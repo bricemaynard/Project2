@@ -8,7 +8,7 @@ chartIt();
             labels: data.xlabels,
             datasets: [
             {
-                label: 'Number of Deaths',
+                label: 'Number of Negative Tests by State',
                 data: data.ydeaths,
                 fill:false,
                 backgroundColor: '#CD5C5C',
@@ -21,7 +21,7 @@ chartIt();
         options: {
             title:{
                 display:true,
-                text:'Number of COVID19 Deaths by State',
+                text:'Number of Negative Tests by State',
                 fontSize: 30
             },
             legend:{
@@ -41,7 +41,7 @@ chartIt();
             const columns = row.split(',');
             const states = columns[0];
             xlabels.push(states);
-            const deaths = columns[19];
+            const deaths = columns[8];
             ydeaths.push(deaths);
             console.log(states, deaths);        
         });

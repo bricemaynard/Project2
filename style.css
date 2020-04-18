@@ -73,7 +73,23 @@ h1 {
   background-image: url("covid-19.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: cover;
+  background-size: contain;
+  opacity: 0.3;
+}
+
+#bubble2::before {
+  position: absolute;
+  top: 70px;
+  left: 270px;
+  z-index: -1;
+  display: block;
+  width: 800px;
+  height: 500px;
+  content: " ";
+  background-image: url("covid-19.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
   opacity: 0.3;
 }
 

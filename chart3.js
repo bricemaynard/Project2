@@ -1,7 +1,7 @@
 chartIt();
     async function chartIt(){
     const data = await getData();
-    const ctx = document.getElementById('chart').getContext('2d');
+    const ctx = document.getElementById('chart3').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -34,7 +34,7 @@ chartIt();
     async function getData(){
         const xlabels = [];
     const ydeaths = [];
-        const response = await fetch('death.csv');
+        const response = await fetch('current.csv');
         const data = await response.text();
         const table = data.split('\n').slice(1);
         table.forEach(row => {
