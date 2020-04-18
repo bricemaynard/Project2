@@ -1,15 +1,74 @@
+body {
+  background: #d3d3d3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: bold
+}
+
+.navbar {
+  color: rgb(121, 121, 121);
+  max-height: 50px;
+  font-size: 15px;
+}
+
+.navigation .navbar-brand{
+	color: #ffffff; 
+	margin-left: 50px; 
+	padding: inherit; 
+	font-weight: bold; 
+	background-color: rgb(167, 39, 39)
+}
+
+.nav-link:hover{
+  color: white;
+  background-color:rgb(167, 39, 39)
+}
+
+.container .col-md-12 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(5, 93, 128);
+  color: white
+}
+
+#chart2 {
+  background-color: white
+}
+
+.panel {
+  background-color: white
+}
+
+.panel-heading {
+  font-weight: bold
+}
+
+#filter-btn:hover {
+  color: white;
+  background-color: rgb(5, 93, 128)
+}
+
+#state-table {
+  background-color: white;
+}
+
+.table-head {
+  background-color: white
+}
+
 #currentData {
   border-radius: 8px;
 }
 
-.chart::before {
+#bubble::before {
   position: absolute;
-  top: 50px;
-  left: 300px;
+  top: 70px;
+  left: 270px;
   z-index: -1;
   display: block;
-  width: 400px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   content: " ";
   background-image: url("covid-19.jpg");
   background-repeat: no-repeat;

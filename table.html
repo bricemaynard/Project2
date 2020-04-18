@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project 2: COVID-19</title>
+  <title>Project 2: COVID-19 Data</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
@@ -44,23 +44,12 @@
     </div>
 
     <p>
-      The world is going through a serious pandemic: COVID-19! It has effected the world economy, not to mention how we interact socially. 
-      Here in the US each state is responsible for the safety of the people within that state. Some are doing better than others, but we wanted to use interactive tables and charts to see those differences between the states. 
-      <br><br>
-      Our data is being pulled via API JSON from the COVID Tracking Project. The information is updated daily and is broken down by state.
-      This dashboard allows us to visual the specifics for each state, and make queries to mine covid-19 testing and state status.
-      You can click on the links at the top of the page to view different charts.
+      We live in such amazing times, we can move around easily and keep in touch through social media; however, this leads to most people having family and friends spread out across the country! 
+      We wanted to develop a table where you can filter to a specific state to check on the stats of that state. 
+      <br><br>The table filter also allows for selecting a certain date to get the data for all 50 states on that given day.
     </p>
 
-    <br>
-
-    <p>
-      The interactive graph below switches between the number of positive cases and the number of deaths for each state compared to the number of cases.
-      As one can see, New York has a significantly higher number of cases, and therefore an increased amount of positive cases and deaths.
-    </p>
-    <br>
-
-      <div class="col-md-5">
+      <!-- <div class="col-md-5">
         <div id="bar"></div>
       </div>
       <div class="col-md-5">
@@ -72,7 +61,7 @@
         <div id="bubble"></div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <br><br>
 
@@ -80,7 +69,6 @@
     <canvas id="chart" width="800" height="600"></canvas> 
     <canvas id="chart2" width="800" height="600"></canvas> -->
 
-<!--
   <div class="container">
     <div class="row margin-top-50">
       <div class="col-md-2">
@@ -108,7 +96,7 @@
 
   <div class="col-md-10">
     <div id="table-area" class="">
-      <table id="ufo-table" class="table table-striped">
+      <table id="state-table" class="table table-striped">
         <thead>
           <tr>
             <th class="table-head">Date</th>
@@ -124,7 +112,7 @@
         <tbody></tbody>
       </table>
     </div>
-  </div> -->
+  </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
